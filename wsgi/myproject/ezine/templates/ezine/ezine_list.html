@@ -1,0 +1,32 @@
+{% extends 'ezine/base.html' %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-hover table-bordered">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>E-Zine</th>
+              <th>Author</th>
+              <th>Date</th>
+            </tr>
+            {% for hnezine in hnezines %}
+            <tbody>
+              <tr>
+                <td>{{  hnezine.id }}</td>
+                <td><a href="/ezine/{{ hnezine.e_zine }}">{{ hnezine.title }}</a></td>
+                <td>Alzea</td>
+                <td>{{ hnezine.created_date }}</td>
+              </tr>
+            </tbody>
+            {% endfor %}
+          </thead>
+        </table>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

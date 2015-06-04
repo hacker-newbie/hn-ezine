@@ -1,0 +1,13 @@
+{% extends 'ezine/base.html' %}
+
+{% block content %}
+    <div class="blog">
+        {% if hnezine.published_date %}
+            <div class="date">
+                {{ hnezine.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ hnezine.title }}</h1>
+        <p><iframe src="{{ hnezine.e_zine }}"></iframe></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>HN E-Zine Archives</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/rara.css' %}">
+        <link rel="stylesheet" href="{% static 'css/hacker.css' %}">
+    </head>
+      <body>
+          <div class="page-header">
+              <h1><a href="/">HN E-Zine Archives</a></h1>
+          </div>
+          <div class="content container">
+              <div class="row">
+                  <div class="col-md-12">
+                  {% block content %}
+                  {% endblock %}
+                  </div>
+              </div>
+          </div>
+      </body>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-content">
+                <img src="{% static 'img/python-powered.png' %}" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</html>

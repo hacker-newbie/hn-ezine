@@ -36,6 +36,12 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #MAIN APP
+    'ezine',
+
+    #3RD-PARTY APP
+    'bootstrap3',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -57,11 +63,21 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        # GETTING-STARTED: change 'db.sqlite3' to your sqlite3 database:
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'HNRHC',
+        'USER': 'zea',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
     }
 }
 
@@ -82,5 +98,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static')
+STATIC_URL = '/ezine/static/'
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), '/ezine/static/')
+
+# FILE MEDIA PATH
+
+ENV_PATH = os.path.abspath(os.path.dirname(__file__))
+MEDIA_ROOT = os.path.join(ENV_PATH, 'e-zine/')
+MEDIA_URL = "/ezine/"

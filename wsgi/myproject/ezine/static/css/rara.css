@@ -1,0 +1,50 @@
+/* --------------------------
+*AUTHOR : N4is3N
+*URL : http://zealab.com
+*CODED FOR HN Community
+----------------------------- */
+
+/*GLOBAL*/
+
+body {
+  font-family: 'Inconsolata' !important ;
+}
+
+/*HEADER*/
+
+.page-header {
+  text-align: center;
+}
+
+
+/*BLOG*/
+
+.blog-wrapper {
+  border: 1px dashed #00B300;
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.post {
+  margin: 20px 20px 20px 20px;
+}
+
+.post h1 {
+  font-size: 1.2em;
+}
+
+.post p {
+  font-size: 1.2em;
+}
+
+#blog-hr {
+  width: 90%;
+}
+
+
+/*FOOTER*/
+
+.footer-content {
+  text-align: center;
+}
