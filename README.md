@@ -1,4 +1,4 @@
-##HN-Community E-Zine
+##HN-Community E-Zine (BETA Version)
 
 **Screenshot**
 ![Index Page](http://s11.postimg.org/3k73h78eb/Screenshot_from_2015_06_05_11_00_01.png "HN E-Zine Index Page")
