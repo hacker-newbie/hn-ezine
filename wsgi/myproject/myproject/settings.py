@@ -39,9 +39,6 @@ INSTALLED_APPS = (
 
     #MAIN APP
     'ezine',
-
-    #3RD-PARTY APP
-    'bootstrap3',
 )
 
 MIDDLEWARE_CLASSES = (
